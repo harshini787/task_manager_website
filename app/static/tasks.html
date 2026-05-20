@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="task-page">
+
+    <div class="glass-card">
+
+        <div class="top-bar">
+
+            <h1>Your Tasks</h1>
+
+            <button onclick="logoutUser()">
+                Logout
+            </button>
+
+        </div>
+
+        <input type="text" id="taskTitle" placeholder="Task Title">
+
+        <input type="text" id="taskDescription" placeholder="Task Description">
+
+        <button onclick="createTask()">
+            Add Task
+        </button>
+
+        <div class="filter-buttons">
+
+            <button onclick="loadTasks()">
+                All
+            </button>
+
+            <button onclick="loadTasks(true)">
+                Completed
+            </button>
+
+            <button onclick="loadTasks(false)">
+                Pending
+            </button>
+
+        </div>
+
+        <div id="tasks"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
